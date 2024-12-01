@@ -1,0 +1,10 @@
+### To connect to the server-2 with the public ip of that server-2 from server-1.
+
+sshpass -p "DevOps321" ssh centos@<public-ip>
+
+
+### Another one is, to create any text file in server-2 without logging inside the server-2 from server-1.
+
+sshpass -p "DevOps321" ssh centos@<public-ip> -C "echo Hello > /tmp/hello.txt"
+
+==> Here, we just created hello.txt in server-2 from server-1 without logging into server-2.
